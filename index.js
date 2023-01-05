@@ -6,7 +6,7 @@ const app = express();
 const dns = require('node:dns');
 let mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://chris:chris123@cluster0.ryvhgny.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 /** 2) Create a 'Url' Model */
 let counter = 0;
